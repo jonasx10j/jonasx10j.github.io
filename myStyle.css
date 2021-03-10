@@ -1,1 +1,109 @@
+  html, body{
+    background-color: rgb(49, 49, 49);
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 24.5ch;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color:  white;
+  }
+   
+  .sidebar a.active {
+    background-color: rgb(65, 65, 65);
+    color: rgb(43, 190, 226);
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: rgb(65, 65, 75);
+    color: rgb(67, 209, 245);
+  }
+  
+  div.playlistBar {
+    margin-left: 26ch;
+    padding: 1px 16px;
+    height: 100%;
+    width: 75ch;
+    position: fixed;
+  }
+  div.mainContentBar {
+    margin-left: 106ch;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+  }
 
+  .PlaylistHeader {
+    border-bottom: solid;
+    text-align: center;
+  }
+  
+  .PlaylistItemContainer {
+      background-color: black;;
+      overflow:auto;
+      height: 90%;
+  }
+
+  .MediaItem {
+    background-color: gray;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .RegularControlContainerBar {
+    background-color: #666666; /*Same color as other bars */
+  }
+
+  .SeparatorDiv {
+    background-color: rgb(49, 49, 49);  /*Same color as body */
+    padding: 12px;
+  }
+
+  .ControlsContainer {
+    height: inherit;
+  }
+
+  .StandardPadding {
+    padding: 1px 8px;
+  }
+
+  .MediaPlayerContainer {
+    height: 30%;
+    background-color: brown;
+  }
+
+  .DescriptionContainer {
+    height: 20%;
+    background-color: royalblue;
+  }
+
+  .MediaControlsContainer {
+    height: 5%;
+    background-color: gold;
+  }
+
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
